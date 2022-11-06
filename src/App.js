@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Date from "./components/taskViwer"
+import Grid from '@mui/material/Grid';
+const App=()=>
+{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Grid container  >
+               <Grid xs={9}> <Date /></Grid> 
+               <div id="seperator" style={{borderLeft:100,borderColor:"black",borderStyle:"solid"}}></div>
+
+               <Grid xs={2}>
+
+                        <h2>welcome..</h2>
+               </Grid>
+    </Grid>
+
+     
+
+    </>
   );
 }
 
